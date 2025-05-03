@@ -48,10 +48,28 @@ main {
 }
 
 .restaurant-image {
-    height: 150px; /* Fixed height for image placeholder */
-    background-color: #ddd;
+    height: 150px; /* Mantiene la altura fija del contenedor */
+    background-color: #ddd; /* El color gris de fondo */
     margin-bottom: 10px;
+    overflow: hidden; /* Importante para que la imagen no se salga del div */
+    display: flex; /* Para centrar la imagen */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
+
+.restaurant-image img {
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    object-fit: cover; /* Recorta la imagen para que cubra el contenedor manteniendo su aspecto */
+    width: auto;    /* Permite que el ancho se ajuste según la proporción */
+    height: auto;   /* Permite que la altura se ajuste según la proporción */
+    object-fit: contain;
+}
+
+
+
+
 
 .restaurant-details h2 {
     font-size: 1.2em;
