@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Restaurantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Directorio</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="search.html">Buscar</a></li>
+                    <li><a href="new.html">Nuevo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="search-bar">
+                <label for="searchInput">Escribe un texto</label>
+                <input type="text" id="searchInput" placeholder="Italian">
+                <button onclick="searchRestaurant()">Buscar</button>
+            </div>
+
+            <div id="searchResults" class="restaurant-card">
+                <div class="restaurant-image">
+                    </div>
+                <div class="restaurant-details">
+                    <h2>Italiano 65</h2>
+                    <p>Av. 45 Nro. 1 - 85 Medellín</p>
+                    <p>Deliciosa comida italiana</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

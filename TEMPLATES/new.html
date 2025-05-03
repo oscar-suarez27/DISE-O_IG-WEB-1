@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Directorio</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="search.html">Buscar</a></li>
+                    <li><a href="new.html">Nuevo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="new-restaurant-form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+
+                <label for="description">Descripción</label>
+                <textarea id="description"></textarea>
+
+                <label for="address">Dirección</label>
+                <input type="text" id="address">
+
+                <label for="image_url">Imagen URL</label>
+                <input type="text" id="image_url">
+
+                <button onclick="saveRestaurant()">Guardar</button>
+            </div>
+        </main>
+
+        <footer>
+            </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
