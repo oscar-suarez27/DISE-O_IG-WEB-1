@@ -16,6 +16,21 @@ header {
     padding: 10px;
 }
 
+
+.header-content {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Espacia el título y la navegación */
+}
+
+.site-title {
+    font-size: 2em; /* Aumentamos el tamaño de la fuente */
+    font-weight: bold; /* Lo hacemos más llamativo */
+    color: #ff6f61; /* Un color naranja/coral vibrante */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Añadimos una sombra sutil */
+    letter-spacing: 1px; /* Un poco de espacio entre letras para mejor legibilidad */
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
